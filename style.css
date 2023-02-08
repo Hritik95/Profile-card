@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #152533;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container .contact{
+    display: none;
+}
+
+.container .card{
+    border-radius: 30px;
+    background: #530053;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    height: 500px;
+    background: transparent;
+}
+
+.active .contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.container .card .image{
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-60px);
+}
+
+.container .card .image img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+
+}
+
+.container .card .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-40px);
+    color: #fff;
+    padding-top: 20px;
+}
+
+.container .card .text h2{
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.container .card .text h3{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.container .card .btn input{
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: 8px solid #152533;
+    border-radius: 30px;
+    transform: translateY(10px);
+    color: #000;
+    cursor: pointer;
+}
+
+.container .contact{
+    padding-top: 50px;
+}
+
+.container .contact ul{
+    list-style-type: none;
+    width: 100%;
+}
+
+.container .contact ul li{
+    margin-bottom: 10px;
+}
+
+.container .contact ul li a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #530053;
+    border-radius: 20px;
+    height: 70px;
+}
+
+.container .contact ul li a i{
+    padding: 20px;
+    scale: 1.5;
+}
+
+.container .contact ul li a h2{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}

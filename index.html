@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="photo.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>Hritik Jadhav</h2>
+                <h3>Web Developer</h3>
+            </div>
+            <div class="btn">
+                <input type="button" onclick="clk()" value="Contact Me">
+            </div>
+        </div>
+
+        <div class="contact">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-envelope'></i>
+                        <h2>hritikjadhav@gmail.com</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-github' ></i>
+                        <h2>github.com/Hritik95</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-linkedin-square' ></i>
+                        <h2>linkedin/hritik_jadhav</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let card = document.querySelector('.container');
+
+        function clk(){
+            card.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
